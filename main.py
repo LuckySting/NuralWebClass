@@ -24,7 +24,7 @@ class Neuron:
         self.output = None
         self.output_d = None
         self.delta = None
-        self.weights = [(random.randint(0, 100) - 50) / 100 for i in range(weights_count)]
+        self.weights = [(random.randint(0, 100) - 50) / 100 for _ in range(weights_count)]
 
     def feed(self, inputs):
         self.inputs = inputs
